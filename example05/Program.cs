@@ -1,27 +1,28 @@
 ﻿Console.Clear();
 Console.Write("Введите расстояние в метрах:");
-int metr = int.Parse (Console.ReadLine());
-int friend = 2;
+int m = Convert.ToInt32(Console.ReadLine());
+int f = 2;
+int t = 0;
 Console.Write("Введите скорость собаки:");
 int sdog = int.Parse (Console.ReadLine());
 Console.Write("Введите скорость друга 1:");
 int sf1 = int.Parse (Console.ReadLine());
 Console.Write("Введите скорость друга 2:");
 int sf2 = int.Parse (Console.ReadLine());
-int count = 0;
-while (metr > 10)
+int c = 0;
+while (m > 10)
 {
-    if (friend == 2)
+    if (f == 2)
     {
-        int time = metr/(sdog+sf2);
-        int friend = 1;
+        t = m/(sdog+sf2);
+        f = 1;
     }
     else
     {
-        int time = metr/(sdog+sf1);
-        int friend = 2;
+        t = m/(sdog+sf1);
+        f = 2;
     }
-    int metr = metr-(sf1+sf2)*time;
-    int count = count+1;
+    m = m-(sf1+sf2)*t;
+    c++;
 }
-Console.WriteLine($"Собака пробежала {count} раз");
+Console.WriteLine($"Собака пробежала {c} раз");
