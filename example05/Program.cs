@@ -2,7 +2,7 @@
 Console.Write("Введите расстояние в метрах:");
 int m = Convert.ToInt32(Console.ReadLine());
 int f = 2;
-int t = 0;
+int t;
 Console.Write("Введите скорость собаки:");
 int sdog = int.Parse (Console.ReadLine());
 Console.Write("Введите скорость друга 1:");
