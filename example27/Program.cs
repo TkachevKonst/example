@@ -19,9 +19,6 @@ WriteLine();
 GetArray1(matrix);
 PrintArray(matrix);
 
-
-
-
 void GetArray(int[,] array, int min, int max)
 {
     for (int i = 0; i < array.GetLength(0); i++)
